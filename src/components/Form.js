@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import "./Form.css";
 
-const Form = () => {
+const Form = (props) => {
   const [enteredTitle, setEnteredTitle] = useState("");
   const [enteredExplanation, setEnteredExplanation] = useState("");
   const [enteredDate, setEnteredDate] = useState("");
@@ -23,7 +23,8 @@ const Form = () => {
     setEnteredExplanation('');
     setEnteredDate('');
 
-    console.log(data);
+    props.onCarryData(data);
+
     
   };
 

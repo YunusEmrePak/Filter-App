@@ -22,4 +22,3 @@ const Card = (props) => {
 
 export default Card;
 
-{/* <img src={require(`../img/${prps.img}`)} alt={index} /> */}

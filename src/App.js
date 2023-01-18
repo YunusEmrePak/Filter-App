@@ -32,9 +32,13 @@ const App = () => {
     }
   ];
 
+  const onCarryData = (data) => {
+    console.log(data);
+  }
+
   return (
     <div className="container">
-      <Form />
+      <Form onCarryData={onCarryData}/>
       <Card object={objects} i={0} />
       <Card object={objects} i={1} />
       <Card object={objects} i={2} />
