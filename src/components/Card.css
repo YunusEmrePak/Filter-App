@@ -1,7 +1,16 @@
 body {
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-direction: column;
+    width: 1000px;
+    height: 800px;
 }
 
 .card {
@@ -18,4 +27,24 @@ body {
 .card img {
     height: 100px;
     width: 100px;
+}
+
+.card-date {
+    text-align: center;
+}
+
+.date {
+    margin: 5px;
+}
+
+.card-month {
+    font-size: 22px;
+}
+
+.card-year {
+    font-size: 16px;
+}
+
+.card-day {
+    font-size: 20px;
 }

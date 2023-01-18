@@ -6,7 +6,12 @@ const Card = (props) => {
 
   return (
     <div className="card">
-      <img src={require(`../img/${prps.img}`)} alt={index} />
+      <div className="card-date">
+        <div className="card-month date">{prps.month}</div>
+        <div className="card-year date">{prps.year}</div>
+        <div className="card-day date">{prps.day}</div>
+      </div>
+      
       <div className="card-information">
         <h3>{prps.title}</h3>
         <p className="card-explanation">{prps.explanation}</p>
@@ -16,3 +21,5 @@ const Card = (props) => {
 };
 
 export default Card;
+
+{/* <img src={require(`../img/${prps.img}`)} alt={index} /> */}
