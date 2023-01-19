@@ -1,0 +1,17 @@
+.card-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-information h3 {
+    inline-size: 170px;
+    overflow-wrap: break-word;
+    text-align: center;
+}
+
+.card-information p {
+    inline-size: 170px;
+    overflow-wrap: break-word;
+    text-align: center;
+}

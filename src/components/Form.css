@@ -1,37 +1,43 @@
 .form-container {
-    width: 500px;
-    height: 250px;
-    background-color: aliceblue;
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
+  width: 500px;
+  height: 250px;
+  background-color: aliceblue;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  margin: 20px;
 }
 
 .form-container div {
-    margin: 10px;
+  margin: 10px;
 }
 
 .form-container label {
-    margin-right: 10px;
-    font-size: 20px;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.form-outContainer {
+  display: flex;
+  justify-content: center;
 }
 
 .buttons {
-    margin: 10px;
-    padding: 10px;
-    font-size: 20px;
-    background-color: blueviolet;
-    border-radius: 20px;
-    color: #fff;
-    cursor: pointer;
+  margin: 10px;
+  padding: 10px;
+  font-size: 20px;
+  background-color: blueviolet;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
 }
 
 .form-explanation label {
-    margin-left: -65px;
+  margin-left: -65px;
 }
 
 .form-date input {
-    width: 180px;
+  width: 180px;
 }

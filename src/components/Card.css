@@ -1,50 +1,53 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+  height: 100vh;
 }
 
-.container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    width: 1000px;
-    height: 800px;
+.card-container {
+  background-color: rgb(164, 124, 202);
+  width: 1000px;
+  padding: 20px;
+}
+
+.outCard {
+  display: inline-block;
 }
 
 .card {
-    width: 275px;
-    height: 150px;
-    background-color: #8DCBE6;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border-radius: 15px;
-    margin: 20px;
+  width: 275px;
+  height: 150px;
+  background-color: #032231;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 15px;
+  margin: 20px;
+  color: #fff;
 }
 
 .card img {
-    height: 100px;
-    width: 100px;
+  height: 100px;
+  width: 100px;
 }
 
 .card-date {
-    text-align: center;
+  text-align: center;
 }
 
 .date {
-    margin: 5px;
+  margin: 5px;
 }
 
 .card-month {
-    font-size: 22px;
+  font-size: 22px;
 }
 
 .card-year {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .card-day {
-    font-size: 20px;
+  font-size: 20px;
 }

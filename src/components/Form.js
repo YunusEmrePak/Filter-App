@@ -53,44 +53,46 @@ const Form = (props) => {
   };
 
   return (
-    <form onSubmit={submitHandler}>
-      <div className="form-container">
-        <div className="form-title">
-          <label>Title</label>
-          <input type="text" value={enteredTitle} onChange={titleHandler} />
+    <div className="form-outContainer">
+      <form onSubmit={submitHandler}>
+        <div className="form-container">
+          <div className="form-title">
+            <label>Title</label>
+            <input type="text" value={enteredTitle} onChange={titleHandler} />
+          </div>
+          <div className="form-explanation">
+            <label>Explanation</label>
+            <input
+              type="text"
+              value={enteredExplanation}
+              onChange={explanationHandler}
+            />
+          </div>
+          <div className="form-date">
+            <label>Date</label>
+            <input
+              type="date"
+              value={enteredDate}
+              onChange={dateHandler}
+              min="2021-01-01"
+              max="2024-12-31"
+            />
+          </div>
+          <div className="form-buttons">
+            <button className="buttons submit-button" type="submit">
+              Submit
+            </button>
+            <button
+              className="buttons delete-button"
+              type="clear"
+              onClick={deleteHandler}
+            >
+              Clear
+            </button>
+          </div>
         </div>
-        <div className="form-explanation">
-          <label>Explanation</label>
-          <input
-            type="text"
-            value={enteredExplanation}
-            onChange={explanationHandler}
-          />
-        </div>
-        <div className="form-date">
-          <label>Date</label>
-          <input
-            type="date"
-            value={enteredDate}
-            onChange={dateHandler}
-            min="2020-01-01"
-            max="2024-12-31"
-          />
-        </div>
-        <div className="form-buttons">
-          <button className="buttons submit-button" type="submit">
-            Submit
-          </button>
-          <button
-            className="buttons delete-button"
-            type="clear"
-            onClick={deleteHandler}
-          >
-            Clear
-          </button>
-        </div>
-      </div>
-    </form>
+      </form>
+    </div>
   );
 };
 

@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Card from "./components/Card";
 import Form from "./components/Form";
 
+import "./components/Card.css";
+
 let DUMMY_ARRAY = [
   {
     id: "1",
