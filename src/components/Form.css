@@ -19,6 +19,11 @@
   font-size: 20px;
 }
 
+.form-container input {
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
 .form-outContainer {
   display: flex;
   justify-content: center;
@@ -32,6 +37,7 @@
   border-radius: 20px;
   color: #fff;
   cursor: pointer;
+  border: none;
 }
 
 .form-explanation label {

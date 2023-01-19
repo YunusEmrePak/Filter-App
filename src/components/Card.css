@@ -9,6 +9,7 @@ body {
   background-color: rgb(164, 124, 202);
   width: 1000px;
   padding: 20px;
+  border-radius: 10px;
 }
 
 .alert {

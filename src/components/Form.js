@@ -48,7 +48,7 @@ const Form = (props) => {
 
   const deleteHandler = (event) => {
     setEnteredTitle("");
-    setEnteredPrice();
+    setEnteredPrice("");
     setEnteredDate("");
   };
 
