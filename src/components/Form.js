@@ -4,7 +4,7 @@ import "./Form.css";
 
 const Form = (props) => {
   const [enteredTitle, setEnteredTitle] = useState("");
-  const [enteredExplanation, setEnteredExplanation] = useState("");
+  const [enteredPrice, setEnteredPrice] = useState("");
   const [enteredDate, setEnteredDate] = useState("");
 
   const submitHandler = (event) => {
@@ -24,11 +24,11 @@ const Form = (props) => {
       month: month,
       day: day,
       title: enteredTitle,
-      explanation: enteredExplanation,
+      price: enteredPrice,
     };
 
     setEnteredTitle("");
-    setEnteredExplanation("");
+    setEnteredPrice("");
     setEnteredDate("");
 
     props.onCarryData(data);
@@ -38,8 +38,8 @@ const Form = (props) => {
     setEnteredTitle(event.target.value);
   };
 
-  const explanationHandler = (event) => {
-    setEnteredExplanation(event.target.value);
+  const priceHandler = (event) => {
+    setEnteredPrice(event.target.value);
   };
 
   const dateHandler = (event) => {
@@ -48,7 +48,7 @@ const Form = (props) => {
 
   const deleteHandler = (event) => {
     setEnteredTitle("");
-    setEnteredExplanation("");
+    setEnteredPrice();
     setEnteredDate("");
   };
 
@@ -60,12 +60,12 @@ const Form = (props) => {
             <label>Title</label>
             <input type="text" value={enteredTitle} onChange={titleHandler} />
           </div>
-          <div className="form-explanation">
-            <label>Explanation</label>
+          <div className="form-price">
+            <label>Price</label>
             <input
-              type="text"
-              value={enteredExplanation}
-              onChange={explanationHandler}
+              type="number"
+              value={enteredPrice}
+              onChange={priceHandler}
             />
           </div>
           <div className="form-date">

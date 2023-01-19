@@ -11,7 +11,7 @@ let DUMMY_ARRAY = [
     month: "August",
     day: "3",
     title: "First",
-    explanation: "Hello World 1",
+    price: "5.99",
   },
   {
     id: "2",
@@ -19,7 +19,7 @@ let DUMMY_ARRAY = [
     month: "March",
     day: "29",
     title: "Second",
-    explanation: "Hello World 2",
+    price: "10.75",
   },
   {
     id: "3",
@@ -27,7 +27,7 @@ let DUMMY_ARRAY = [
     month: "January",
     day: "18",
     title: "Third",
-    explanation: "Hello World 3",
+    price: "2.99",
   },
 ];
 

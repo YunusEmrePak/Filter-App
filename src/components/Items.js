@@ -11,8 +11,8 @@ const Items = (props) => {
         </div>
 
         <div className="card-information">
-            <h3>{props.title}</h3>
-          <p className="card-explanation">{props.explanation}</p>
+          <h3>{props.title}</h3>
+          <p>${props.price}</p>
         </div>
       </div>
     </div>

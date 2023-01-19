@@ -22,7 +22,7 @@ const Card = (props) => {
         <Items
           key={item.id}
           title={item.title}
-          explanation={item.explanation}
+          price={item.price}
           year={item.year}
           month={item.month}
           day={item.day}
