@@ -7,6 +7,7 @@ const Card = (props) => {
     <div>
       {props.object.map((item) => (
         <Items
+          key={item.id}
           title={item.title}
           explanation={item.explanation}
           year={item.year}

@@ -10,7 +10,7 @@ const Form = (props) => {
   const submitHandler = (event) => {
     event.preventDefault();
 
-    const randomId = Math.floor(Math.random() * 10 + 1);
+    const randomId = Math.random();
 
     const date = new Date(enteredDate);
 
